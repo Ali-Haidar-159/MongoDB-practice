@@ -1,0 +1,45 @@
+
+//To see the version of mongoDB : 
+	mongod --version
+	
+
+//MongoDB server connection with the command line or MongoDB Shell start : 
+	mongosh 
+	
+//Database create for a college : 
+	use College
+	
+//Collection create in the college database : 
+	db.createCollection("students")
+	db.createCollection("teachers")
+	
+//To see all the collections name : 
+	show collections 
+	
+//Insert documents in the "students" collection : 
+	db.students.insertOne({name:"Ali Haidar",age:21 , sub:"cse", languages:["bangla","english"]})
+	db.students.insertMany([{name:"kamal",age:20,languages:["bangla","hindi"]},{name:"Abdul Jabbar",age:35,languages:["bangla","urdu"]},{name:"Matin",age:33,languages:["english","urdu"]}])
+	
+//To print all the documents of a collection : 
+	 db.students.find()
+	 
+//Print first 2 documents : 
+	db.students.find().limit(2)
+	
+//To see Ali Haidar's information or document : 
+	College> db.students.find({name:"Ali Haidar"})
+	
+//Rename a collection name from "students" to "studentsDetails" : 
+	 db.students.renameCollection("studentsDetails")
+	 
+
+
+//Insert documents in the "teachers" collection : 
+	db.students.insertOne({name:"Sumon",age:35 , sub:"cse", languages:["bangla","english"]})
+	db.students.insertMany([{name:"Sakib",age:40,languages:["bangla","hindi"]},{name:"Abdul Hakim",age:45,languages:["bangla","urdu"]},{name:"Sabbir",age:56,languages:["english","urdu"]}])
+	
+//Update data from "teachers" collection :
+	db.teachers.update({name:"Sakib"},{$set:{name:"Akbor",age:56}})
+	
+//Delete data from "studentsDetails" collection : 
+	db.studentsDetails.deleteOne({name:"Matin"})

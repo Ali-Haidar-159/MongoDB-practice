@@ -1,0 +1,16 @@
+# Introductions :
+
+
+*** MongoDB is a document database. It stores data in a JSON format type called BSON.
+
+*** A record in MongoDB is a document, which basically consists of key-value pairs. This structure is similar to the structure of JSON objects.
+
+*** MongoDB is a document database and can be installed locally or hosted in the cloud.
+
+*** SQL databases are considered relational databases. They store related data in separate tables. When data is needed, the data is joined together by querying multiple tables.
+
+MongoDB, on the other hand, is a document database, often referred to as a non-relational database. This does not mean that relational data cannot be stored in a document database; Rather it implies that relational data is stored differently. It can be better called a non-tabular database.
+
+MongoDB stores data in flexible documents. Instead of multiple tables, you can keep all your related data together. It reads data very fast.
+
+Also, MongoDB can have multiple data groups. In MongoDB, these are called collections instead of tables.
