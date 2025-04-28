@@ -13,11 +13,3 @@ The repository includes the following exercises:
 3. **Aggregation**: Using the aggregation framework to perform complex data manipulations.
 4. **Schema Design**: Designing effective schemas for MongoDB collections.-->
 
-## How to Use
-To use the exercises in this repository:
-1. Clone the repository to your local machine:
-    ```bash
-    git clone https://github.com/your-username/mongodb-exercises.git
-    ```
-
-Happy learning!
